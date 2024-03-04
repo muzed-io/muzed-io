@@ -7,19 +7,25 @@
     <title>Muzed</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Importing Poppins font and setting Tailwind-like styles with custom colors */
+        /* Importing Poppins font and enhancing styles with gradients */
         body {
             font-family: 'Poppins', sans-serif;
-            /* Light gray text color for general body text */
-            color: #D1D5DB;
-            /* Dark background */
-            background-color: #1F2937;
+            background: linear-gradient(to right, #2d3436, #000000);
+            /* Subtle gradient background */
         }
 
-        .text-purple {
-            color: #8B5CF6;
+        .text-gradient {
+            /* Gradient for heading text */
+            background: linear-gradient(to right, #6D28D9, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
+        .text-light-purple {
+            color: #A78BFA;
+        }
+
+        /* Lighter shade of purple for subheading */
         .text-center {
             text-align: center;
         }
@@ -28,30 +34,32 @@
             margin-top: 80px;
         }
 
-        .text-4xl {
-            font-size: 4.5rem;
-            line-height: 5.0rem;
+        .text-6xl {
+            font-size: 3.75rem;
+            line-height: 1;
         }
 
+        /* Larger size for heading */
         .text-2xl {
             font-size: 1.5rem;
             line-height: 2rem;
         }
 
-        .text-xl {
-            font-size: 1.25rem;
-            line-height: 1.75rem;
-        }
-
         .text-sm {
-            font-size: 0.5rem;
-            line-height: 0.75rem;
+            font-size: .875rem;
+            line-height: 1.25rem;
         }
 
+        /* Smaller size for footer text */
         .font-bold {
             font-weight: bold;
         }
 
+        .font-normal {
+            font-weight: normal;
+        }
+
+        /* Normal font weight for subheading */
         .min-h-screen {
             min-height: 100vh;
         }
@@ -78,8 +86,6 @@
             position: fixed;
             bottom: 0;
             width: 100%;
-            background-color: #111827;
-            /* Slightly darker background for footer */
         }
     </style>
 </head>
@@ -87,8 +93,8 @@
 <body>
 
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <h1 class="text-4xl font-bold text-center mt-20 text-purple">Muzed</h1>
-        <p class="text-2xl text-center text-purple">Innovation done differently.</p>
+        <h1 class="text-6xl font-bold text-center mt-20 text-gradient">Muzed</h1>
+        <p class="text-2xl text-center font-normal text-light-purple">Innovation done differently.</p>
     </div>
 
     <footer class="footer text-sm text-center p-4">
