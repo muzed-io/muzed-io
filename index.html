@@ -1,6 +1,78 @@
-<html>
-    <body>
-        <h1>Muzed</h1>
-        <p>Innovation done differently.</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzed</title>
+    <style>
+        /* Basic Tailwind-like styles */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-20 {
+            margin-top: 80px;
+        }
+
+        .text-4xl {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex flex-col min-h-screen justify-center items-center">
+        <h1 class="text-4xl font-bold text-center mt-20">Muzed</h1>
+        <p class="text-2xl text-center">Innovation done differently.</p>
+    </div>
+
+    <footer class="footer text-xl text-center p-4">
+        Copyright Thunder Software Ltd 2024
+    </footer>
+
+</body>
+
 </html>
