@@ -5,8 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muzed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Basic Tailwind-like styles */
+        /* Importing Poppins font and setting Tailwind-like styles with custom colors */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #D1D5DB;
+            /* Light gray text color for general body text */
+            background-color: #1F2937;
+            /* Dark background */
+        }
+
+        .text-purple {
+            color: #8B5CF6;
+        }
+
+        /* Purple text color */
         .text-center {
             text-align: center;
         }
@@ -55,9 +69,13 @@
         }
 
         .footer {
+            color: #D1D5DB;
+            /* Light gray for footer text */
             position: fixed;
             bottom: 0;
             width: 100%;
+            background-color: #111827;
+            /* Slightly darker background for footer */
         }
     </style>
 </head>
@@ -65,8 +83,8 @@
 <body>
 
     <div class="flex flex-col min-h-screen justify-center items-center">
-        <h1 class="text-4xl font-bold text-center mt-20">Muzed</h1>
-        <p class="text-2xl text-center">Innovation done differently.</p>
+        <h1 class="text-4xl font-bold text-center mt-20 text-purple">Muzed</h1>
+        <p class="text-2xl text-center text-purple">Innovation done differently.</p>
     </div>
 
     <footer class="footer text-xl text-center p-4">
